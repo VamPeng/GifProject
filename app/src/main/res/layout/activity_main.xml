@@ -6,17 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/main_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <com.example.gifplayer.NeBigView
+        android:id="@+id/main_bv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/main_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/main_iv"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/main_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_iv"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/main_iv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_tv"
+            android:scaleType="centerInside" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

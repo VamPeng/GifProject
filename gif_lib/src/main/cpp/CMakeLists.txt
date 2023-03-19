@@ -23,6 +23,8 @@ find_library( # Sets the name of the path variable.
 
         log)
 
+include_directories()
+
 target_link_libraries( # Specifies the target library.
         giflib
         jnigraphics
